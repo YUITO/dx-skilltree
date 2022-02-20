@@ -9,7 +9,7 @@
       }
     </style>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
     <div id="network"></div>
@@ -40,7 +40,7 @@
       var options = {
       };
 
-      var json = $.getJSON("https://yuito.github.io/dx-skilltree/dx-skilltree.json")
+      var json = $.getJSON("dx-skilltree.json")
         .done(function(data){
           var data = {
             nodes: data.nodes,
