@@ -42,13 +42,15 @@
       };*/
       var options = {
       };
-      const jsonData= require('./dx-skilltree.json'); 
-      console.log(jsonData);
-      var data = {
-        nodes: jsonData.nodes,
-        edges: jsonData.edges
-      };
-      var network = new vis.Network(container, data, options);
+      $.getJSON("data.json")
+        .done(function (json) {
+          var data = {
+            nodes: json.nodes,
+            edges: json.edges
+          };
+          console.log(json);
+          var network = new vis.Network(container, data, options);
+        });
 //      var network = new vis.Network(container, data, options);
     </script>
   </body>
