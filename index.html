@@ -39,16 +39,14 @@
       };*/
       var options = {
       };
-
-      var json = $.getJSON("dx-skilltree.json")
-        .done(function(data){
-          var data = {
-            nodes: data.nodes,
-            edges: data.edges
-          };
-          console.log(data.nodes);
-          var network = new vis.Network(container, data, options);
-        });
+      var json = $.getJSON("dx-skilltree.json", (data) => {
+        var data = {
+          nodes: data.nodes,
+          edges: data.edges
+        };
+        console.log(data.nodes);
+        var network = new vis.Network(container, data, options);
+      });
 //      var network = new vis.Network(container, data, options);
     </script>
   </body>
