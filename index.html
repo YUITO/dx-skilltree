@@ -15,14 +15,9 @@
     <script type="text/javascript">
       var nodeslist = ['愛知', 'BB', 'CC'];
       var nodes = new vis.DataSet([
-        {id: 1, label: nodeslist[0]},
-        {id: 2, label: 'B'},
-        {id: 3, label: 'C'},
-        {id: 4, label: 'D'},
-        {id: 5, label: 'E'},
-        {id: 6, label: 'F'},
-        {id: 7, label: 'G'},
-        {id: 8, label: 'H'},
+        for (let i = 0; i < nodeslist.length; i++) {
+          {id: i+1, label: nodeslist[i]},
+        }
       ]);
       var edges = new vis.DataSet([
       ]);
