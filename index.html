@@ -42,11 +42,10 @@
       const jsonData= require('./dx-skilltree.json'); 
       console.log(jsonData);
       var data = {
-          nodes: jsonData.nodes,
-          edges: jsonData.edges
-        };
-        var network = new vis.Network(container, data, options);
-      });
+        nodes: jsonData.nodes,
+        edges: jsonData.edges
+      };
+      var network = new vis.Network(container, data, options);
 //      var network = new vis.Network(container, data, options);
     </script>
   </body>
