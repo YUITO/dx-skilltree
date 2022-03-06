@@ -16,6 +16,9 @@
     <script type="text/javascript">
       var container = document.getElementById('network');
       var options = {
+        nodes: {
+          shape: "box",
+        },
       };
       $.getJSON("dx-skilltree.json")
         .done(function (json) {
