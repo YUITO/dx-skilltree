@@ -16,6 +16,12 @@
     <script type="text/javascript">
       var container = document.getElementById('network');
       var options = {
+        edges: {
+          smooth: {
+            type: "cubicBezier",
+            roundness: 0.4,
+          },
+        },
         nodes: {
           shape: "square",
         },
@@ -23,6 +29,7 @@
           hierarchical: {
           },
         },
+        physics: false,
       };
       $.getJSON("dx-skilltree.json")
         .done(function (json) {
